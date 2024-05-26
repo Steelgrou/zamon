@@ -1,0 +1,39 @@
+.button a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    /* это позволяет применить padding и другие свойства */
+}
+
+.button a:hover {
+    color: #fff;
+    /* если требуется оставить цвет текста белым */
+}
+
+.button {
+    font-size: 14px;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 12px 30px;
+    display: inline-block;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: all 0.3s;
+    background-color: #22b3c1;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    /* центрирует текст внутри кнопки */
+}
+
+.button:hover {
+    background-color: #fff;
+    color: #22b3c1;
+    /* изменим цвет текста при наведении для контраста */
+}
+
+/* Дополнительный стиль для ссылки внутри кнопки при наведении */
+.button:hover a {
+    color: #22b3c1;
+}

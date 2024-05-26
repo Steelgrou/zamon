@@ -1,0 +1,24 @@
+.reservation-down__wrapper {
+    display: flex;
+ justify-content: space-between;
+
+}
+
+.reservation-down {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(/public/reservation-background.jpg);
+    padding: 90px 0;
+}
+
+.reservation-left h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.reservation-left h4 {
+    font-size: 22px;
+    color: #fff;
+}

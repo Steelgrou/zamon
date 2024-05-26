@@ -1,7 +1,7 @@
 import Slider from "./Slider";
 
 
-export default () => {
+export default function Entrance() {
   return (
     <>
       <Slider />

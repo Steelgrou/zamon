@@ -4,7 +4,6 @@ import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import istanbul from '/istanbul.jpg'
 
-
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -19,16 +18,15 @@ export default function Slider() {
             spaceBetween={50}
             slidesPerView={1}
             navigation
-            autoplay={true}
+
             pagination={{ clickable: true }}
             scrollbar={{ draggable: true }}
-            onSwiper={(swiper) => console.log(swiper)}
-            onSlideChange={() => console.log('slide change')}
+
         >
-            <SwiperSlide className='istanbul'><img src={istanbul} alt="" /></SwiperSlide>
-            <SwiperSlide><img src={istanbul} alt="" /></SwiperSlide>
-            <SwiperSlide><img src={istanbul} alt="" /></SwiperSlide>
-            <SwiperSlide><img src={istanbul} alt="" /></SwiperSlide>
+            <SwiperSlide className='istanbul'><img src={istanbul} alt="" style={{ width: "100%", height: "100vh" }} /></SwiperSlide>
+            <SwiperSlide className='istanbul'><img src={istanbul} alt="" style={{ width: "100%", height: "100vh" }} /></SwiperSlide>
+            <SwiperSlide className='istanbul'><img src={istanbul} alt="" style={{ width: "100%", height: "100vh" }} /></SwiperSlide>
+            <SwiperSlide className='istanbul'><img src={istanbul} alt="" style={{ width: "100%", height: "100vh" }} /></SwiperSlide>
             ...
         </Swiper>
     )
