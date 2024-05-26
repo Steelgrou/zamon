@@ -1,5 +1,6 @@
 
 import './App.css'
+import AboutSection from './components/About/AboutSection'
 import Footer from './components/Footer/Footer'
 import Header from './components/Header/Header'
 import Reservation from './components/Reservation/Reservation'
@@ -17,7 +18,7 @@ function App() {
       <Header />
       <Entrance />
 
-
+      <AboutSection />
       <Reservation />
       <Footer />
     </>
