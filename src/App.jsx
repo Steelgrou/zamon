@@ -14,12 +14,12 @@ function App() {
 
   return (
     <>
-      <Header/>
-      <Entrance/>
+      <Header />
+      <Entrance />
 
 
-<Reservation/>
-      <Footer/>
+      <Reservation />
+      <Footer />
     </>
   )
 }

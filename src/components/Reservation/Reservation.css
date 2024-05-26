@@ -1,6 +1,16 @@
+.reservation-wrapper {
+    background-color: #f8f9fa;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding: 60px 120px;
+    margin-bottom: 30px;
+}
+
+
+
 .reservation-down__wrapper {
     display: flex;
- justify-content: space-between;
+    justify-content: space-between;
 
 }
 
@@ -21,4 +31,112 @@
 .reservation-left h4 {
     font-size: 22px;
     color: #fff;
+}
+
+
+/* form */
+
+
+
+
+.reservation-title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 57.98px;
+    color: #211F54;
+    padding: 25px 0px;
+}
+
+.input-date input {
+    color: #b2b3c1;
+}
+
+#reservationForm {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+#reservationForm .div {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.reservation-first__box {
+    display: flex;
+    gap: 20px;
+}
+
+.reservation-first__box .div {
+    width: 50%;
+}
+
+.reservation-second__box {
+    display: flex;
+    gap: 20px;
+}
+
+.reservation-second__box .div {
+    width: 50%;
+}
+
+#reservationForm input {
+    border: 2px solid #b2b3c1;
+    padding: 25px 50px;
+
+    border-radius: 40px;
+}
+
+.reservation-select {
+
+    padding: 25px 50px;
+    border: 2px solid #b2b3c1;
+    border-radius: 40px;
+}
+
+.div label {
+    color: #6E7191;
+}
+
+.div input {
+    font-size: 20px;
+}
+
+.reservation-wrapper span {
+    color: #22b3c1;
+}
+
+.reservation-wrapper h2 {
+    text-align: center;
+}
+
+.reservation-select {
+    font-size: 20px;
+    appearance: none;
+    background: url('data:image/svg+xml;charset=US-ASCII,<svg%20xmlns="http://www.w3.org/2000/svg"%20viewBox="0%200%2020%2020"><polygon%20points="0,0%2020,0%2010,20"%20style="fill:%23000;"/></svg>') no-repeat;
+    background-position: 94% center;
+    background-size: 10px;
+    /* Размер стрелки */
+}
+
+
+
+.btn-grad {
+    background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA 51%, #1FA2FF 100%);
+    padding: 25px 45px;
+    font-size: 18px;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 40px;
+    border: 0;
+    cursor: pointer;
+}
+
+.btn-grad:hover {
+    background-position: right center;
 }
