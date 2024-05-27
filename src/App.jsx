@@ -11,7 +11,7 @@ import Entrance from './components/entrance/Entrance'
 
 
 function App() {
-
+  
 
   return (
     <>
@@ -21,6 +21,7 @@ function App() {
       <AboutSection />
       <Reservation />
       <Footer />
+      
     </>
   )
 }

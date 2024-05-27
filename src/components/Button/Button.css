@@ -30,6 +30,7 @@
 .button:hover {
     background-color: #fff;
     color: #22b3c1;
+    border: 1px solid #22b3c1 ;
     /* изменим цвет текста при наведении для контраста */
 }
 

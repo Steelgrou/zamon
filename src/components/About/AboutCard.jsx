@@ -1,10 +1,15 @@
 import React from 'react'
-import firstImg from '/about-first.jpg'
 
+import { useTranslation } from 'react-i18next'
 import Button from '../Button/Button'
 import './AboutCard.css'
 
-export default function AboutCard({ title, subtitle, img }) {
+export default function AboutCard({ title, subtitle, desc, img }) {
+    const { t, i18n } = useTranslation();
+    const handleChange = (event) => {
+        const selectedLaungage = event.target.value;
+        i18n.changeLanguage(selectedLaungage);
+    }
     return (
         <section>
 
@@ -18,17 +23,14 @@ export default function AboutCard({ title, subtitle, img }) {
                     <div className="aboutcard-right">
                         <div className="aboutcard-box">
                             <div>
-                                <h4>Cheap Railway Tickets With Us</h4>
-                                <span>Whole world</span>
+                                <h4>{title}</h4>
+                                <span>{subtitle}</span>
                             </div>
                             <div className="aboutcard-btn">
                                 <Button> Explore More</Button>
                             </div>
                             
-                            <p>Embark on a railway adventure and explore destinations worldwide. Whether it's the picturesque landscapes,
-                                bustling cities, or cultural gems, our rail services offer a unique and comfortable way to traverse the
-                                globe. Immerse yourself in the beauty of different cultures, all accessible through our extensive railway network..
-                            </p>
+                            <p>{desc}</p>
                            
                             
                         </div>
