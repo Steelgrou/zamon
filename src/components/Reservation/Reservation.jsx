@@ -3,6 +3,10 @@ import Button from '../Button/Button'
 import "./Reservation.css"
 import axios from 'axios'
 
+import reservationPhone from '/reservation-phone.svg'
+import reservationMessage from '/reservation-message.svg'
+import reservationLocation from '/reservation-location.svg'
+
 export default function Reservation() {
     // Send message
     const sendMessage = (event) => {
@@ -12,13 +16,13 @@ export default function Reservation() {
         const url = `https://api.telegram.org/bot${token}/sendMessage`;
         const name = document.getElementById("name").value;
         const number = document.getElementById("number").value;
-        const adress = document.getElementById("adress").value;
-        const email = document.getElementById("email").value;
-        const service = document.getElementById("service").value;
-        const day = document.getElementById("day").value;
-        const add = document.getElementById("add").value;
+        const guest = document.getElementById("guest").value;
+        const date = document.getElementById("date").value;
+        const destination = document.getElementById("destination").value;
+        const country = document.getElementById("country").value;
 
-        const messageContent = `ID: ${name}\nFull name: ${number}\nPhone number: ${adress}\nAddress: ${email}\nEmail: ${service}\nDay of service: ${day}\nAdd a note: ${add}`
+
+        const messageContent = `ID: ${name}\nPhoneNumber: ${number}\nNumber Of Guests: ${guest}\nDate: ${date}\nChoose Your Destination: ${destination}\nCountry: ${country} `
         axios({
             url: url,
             method: 'POST',
@@ -37,7 +41,40 @@ export default function Reservation() {
 
     return (
         <section>
+            <div className="reservation-up">
+                <h4>Book Prefered Deal Here</h4>
+                <hr />
+                <h2>Make Your Reservation</h2>
+                <Button >Discover More</Button>
+
+                <div className="container">
+                    <div className="reservation-cards">
+                        <div className="reservation-card">
+                            <div className="reservation-card__img">
+                                <img src={reservationPhone} alt="" />
+                            </div>
+                            <p className='reservation-card__title' >Make a Phone Call</p>
+                            <a href="tel:+998992999996">+998992999996</a>
+                        </div>
+                        <div className="reservation-card">
+                            <div className="reservation-card__img">
+                                <img src={reservationMessage} alt="" />
+                            </div>
+                            <p className='reservation-card__title'>Contact Us via Email</p>
+                            <a href="zamonbiznestour@mail.ru">zamonbiznestour@mail.ru</a>
+                        </div>
+                        <div className="reservation-card">
+                            <div className="reservation-card__img">
+                                <img src={reservationLocation} alt="" />
+                            </div>
+                            <p className='reservation-card__title' >Visit Our Offices</p>
+                            <a href="/">15/25, Chilanzar - 9, Tashkent city</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div className="container">
+                <iframe className='reservation-location' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3565.6158556605287!2d69.16316215393468!3d41.280279049443514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae89a274fdb9b7%3A0x2b8bc58608ca7fb2!2z0KfQuNC70LDQvdC30LDRgC0yNSwgMTAwMTUyLCDQotCw0YjQutC10L3Rgiwg0KLQsNGI0LrQtdC90YLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwg0KPQt9Cx0LXQutC40YHRgtCw0L0!5e0!3m2!1sru!2s!4v1716960624060!5m2!1sru!2s"></iframe>
                 <div className="reservation-wrapper">
                     <h2 className='reservation-title'>Make Your <span>Reservation</span> Through This <span>Form</span> </h2>
                     <form id='reservationForm' onSubmit={sendMessage}>
@@ -57,7 +94,7 @@ export default function Reservation() {
                         <div className="reservation-second__box">
                             <div className="div">
                                 <label htmlFor="">Number Of Guests</label>
-                                <select className='reservation-select'>
+                                <select id='guest' className='reservation-select'>
                                     <option>ex. 3 or 4 or 5</option>
                                     <option>1</option>
                                     <option>2</option>
@@ -68,14 +105,14 @@ export default function Reservation() {
                             </div>
                             <div className="div input-date">
                                 <label htmlFor="">Check In Date</label>
-                                <input type="date" id='email' required />
+                                <input type="date" id='date' required />
                             </div>
 
                         </div>
 
                         <div className="div">
                             <label htmlFor="">Choose Your Destination</label>
-                            <select className='reservation-select'>
+                            <select id='destination' className='reservation-select'>
                                 <option>Antalya</option>
                                 <option>Istanbul</option>
                                 <option>Dubai</option>
@@ -87,7 +124,7 @@ export default function Reservation() {
                         </div>
                         <div className="div">
                             <label htmlFor="">Choose Your Visa Support</label>
-                            <select className='reservation-select'>
+                            <select id='country' className='reservation-select'>
                                 <option>Country</option>
                                 <option>USA</option>
                                 <option>Evrope</option>
