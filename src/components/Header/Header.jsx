@@ -4,6 +4,10 @@ import ruFlag from '/flag.png'
 
 import enFlag from '/flag.png'
 
+import logo from '/logo.svg'
+import telegram from '/telegram.svg'
+import instagram from '/instagram.svg'
+
 function Header() {
  // Lang function
  const { t, i18n } = useTranslation();
@@ -18,7 +22,7 @@ function Header() {
                 <div className="container">
                     <div className="header-wrapper">
                         <div className="header-logo">
-                            <img src="" alt="" />
+                            <img src={logo} alt="" />
                         </div>
                         <nav>
                             <div className="navbar-list">
@@ -37,7 +41,10 @@ function Header() {
                                     <option value="ru"> <img className='enFlag' src={enFlag} alt="enFlag" />Русский</option>
                                 </select>
                             </div>
-                            <div className="header-social"></div>
+                            <div className="header-social">
+                                <a href="/"><img src={telegram} alt="" /></a>
+                                <a href="/"><img src={instagram} alt="" /></a>
+                            </div>
                         </div>
                     </div>
                 </div>

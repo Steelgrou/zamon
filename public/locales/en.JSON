@@ -30,5 +30,62 @@
             "subtitle": "Turkey",
             "desc": "Istanbul is the most populous city in Turkey and its cultural, economic and historic center. It is located in north-western part of Turkey, divided into European and Asian side by Bosphorus, which connects the Sea of Marmara and Black Sea. It is the only city in the world that sits on two continents"
         }
+    },
+    "reservation": {
+        "up": {
+            "btn": "Discover More",
+            "h2": "Make Your Reservation",
+            "h4": "Book Prefered Deal Here"
+        },
+        "card": {
+            "title": {
+                "first": "Make a Phone Call",
+                "second": "Contact Us via Email",
+                "third": "Visit Our Offices",
+                "fourth": "15/25, Chilanzar - 9, Tashkent city"
+            }
+        },
+        "form": {
+            "title": "Make Your Reservation Through This Form",
+            "name": {
+                "name": "Your Name",
+                "pholder": "Ex.Jonh Smithee"
+            },
+            "number": {
+                "name": "Your Phone Number",
+                "pholder": "Ex.+99899 999 99 99"
+            },
+            "guest": {
+                "name": "Number Of Guests",
+                "pholder": "ex. 3 or 4 or 5"
+            },
+            "date": {
+                "name": "Check In Date"
+            },
+            "destination": {
+                "name":"Choose Your Destination",
+                "first": "Antalya",
+                "second": "Istanbul",
+                "third": "Dubai",
+                "fourth": "Sharm El-Sheikh",
+                "fifth": "Kuala Lumpur",
+                "sixth": "Canada",
+                "seventh": "England"
+            },
+            "country": {
+                "name":"Choose Your Visa Support",
+                "country":"Country",
+                "first": "USA",
+                "second": "Evrope",
+                "third": "England",
+                "fourth": "Japan",
+                "fifth": "Oman",
+                "sixth": "Saudi Arabia",
+                "seventh": "India",
+                "eighth": "China",
+                "nine": "Hong Kong"
+            },
+            "btn": "Make Your Reservation Now"
+        }
     }
 }

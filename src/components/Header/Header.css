@@ -1,3 +1,39 @@
-.header {
+#header {
+    background-color: rgb(25, 203, 203);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
     
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    top: 200px;
+    
+}
+
+.header-logo img {
+    width: 150px
+}
+
+.navbar-list ul {
+    display: flex;
+    gap: 20px;
+}
+ul li a{
+    color: #fff;
+}
+.header-box{
+    display: flex;
+    gap: 20px;
+}
+.header-social img {
+    width: 20px;
+}
+.header-social {
+    display: flex;
+    gap: 20px;
 }
