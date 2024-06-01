@@ -6,8 +6,7 @@ import Header from './components/Header/Header'
 import Reservation from './components/Reservation/Reservation'
 import Entrance from './components/entrance/Entrance'
 
-import ruTranslation from '../public/locales/ru.json';
-import enTranslation from '../public/locales/en.json';
+import { useTranslation } from 'react-i18next'
 
 
 
@@ -15,12 +14,16 @@ import enTranslation from '../public/locales/en.json';
 
 function App() {
   
-
+// Lang function
+const { t, i18n } = useTranslation();
+const handleChange = (event) => {
+    const selectedLaungage = event.target.value;
+    i18n.changeLanguage(selectedLaungage);
+}
   return (
     <>
       <Header />
       <Entrance />
-
       <AboutSection />
       <Reservation />
       <Footer />
